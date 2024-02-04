@@ -21,6 +21,7 @@
     }
 
     .profile-description{
+      font-size: small;
       color: #94a590;
       max-width: 400px;
       text-align: center;
@@ -46,6 +47,59 @@
     .section-heading{
       color: green;
       text-align: left;
+    }
+
+    .section-ul{
+      max-width: 300px;
+      display: flex;
+      padding: 10px;
+      margin: 0 auto;
+    }
+    
+    .section-li{
+      color: white;
+      margin: 0 auto;
+      list-style: none;
+      
+    }
+    
+    .section-link{
+      text-decoration: none;
+      color: green;
+      /* background-color: green; */
+      font-size: smaller;
+      padding: 2px 5px;
+      border-radius: 10px;
+
+
+    }
+    .section-link:hover{
+      text-decoration: underline;
+      color: white;
+      /* background-color: green; */
+      font-size: smaller;
+      padding: 2px 5px;
+      border-radius: 10px;
+
+
+    }
+
+    .social-media{
+      padding: 20px;
+      margin: 10px;
+    }
+
+    .download-resume{
+      color: #597751;
+      font-size: smaller;
+      text-decoration: none;
+
+    }
+    .download-resume:hover{
+      color: green;
+      font-size: smaller;
+      text-decoration:underline;
+
     }
 
     .skill-container {
@@ -76,16 +130,36 @@
     .experience-container{
       padding: 15px;
       margin: 10px;
-      border-radius: 10px;
-      border: 1px solid #597751;
-
+      border-left: 2px solid #071a01 ;
+      /* background-color: #071a01; */
+      /* border-radius: 10px;
+      border: 1px solid #597751; */
+      
     }
+    
+    .experience-container:hover{
+      padding: 15px;
+      margin: 10px;
+      color: green;
+      /* background-color: white; */
+      /* background-color: #071a01; */
+      /* border-radius: 10px; */
+      /* border: 1px solid #597751; */
+
+    } 
     .experience-timeline{
       font-size: smaller;
+      font-style: italic;
+      color: #94a590;
     }
     .experience-subheading{
       font-size: smaller;
       color: #94a590;
+    }
+
+    .experience-description{
+      color: #94a590;
+      font-size: smaller;
     }
 
     .project-container{
@@ -155,24 +229,50 @@
             <!-- Description -->
             <p class="profile-description">Python enthusiast, dedicated to crafting solutions that matter. Let's collaborate on your next endeavor.</p>
 
+            <!-- Section Links -->
+            <ul class="section-ul">
+              <li class="section-li"><a class="section-link" href="#about-section">About</a></li>
+              <li class="section-li"><a class="section-link" href="#skills-section">Skills</a></li>
+              <li class="section-li"><a class="section-link" href="#experience-section">Experience</a></li>
+              <li class="section-li"><a class="section-link" href="#projects-section">Projects</a></li>
+            </ul>
+
             <!-- GitHub Icon -->
-            <a href="https://github.com/your-github-username" target="_blank" class="text-dark">
-              <i class="bi bi-github h4"></i>
-            </a>
+            <div class="social-media">
+              <a href="https://github.com/akmgeek" target="_blank" class="text-dark">
+                <img src="github-svg-icon.svg" alt="" style="height: 20px; width: 20px;">
+              </a>
+              <a href="https://instagram.com/akmgeek" target="_blank" class="text-dark">
+                <img src="instagram-svg-icon.svg" alt="" style="height: 20px; width: 20px;">
+              </a>
+              <a href="https://youtube.com/akmgeek" target="_blank" class="text-dark">
+                <img src="youtube-svg-icon.svg" alt="" style="height: 20px; width: 20px;">
+              </a>
+              <a href="https://linked.com/akmgeek" target="_blank" class="text-dark">
+                <img src="linkedin-svg-icon.svg" alt="" style="height: 20px; width: 20px;">
+              </a>
+            </div>
+
+            <div>
+              <!-- Resume download link -->
+              <a class="download-resume" href="#">Download Resume >></a>
+
+            </div>
+
         </div>
 
 
         <!-- Scrollable Content -->
         <div class="col-sm-7 h-100 text-light scrollable-content" >
 
-            <section class="about-section">
+            <section class="about-section" id="about-section">
               <h1 class="section-heading">About</h1>
               <p style="color: #94a590;">
                 Embarking on my software development journey in 2022 as a Python intern, I honed my skills with a focus on PyQT. From creating diverse Python applications, including a robust PDF utility, to venturing into web development with Django for an e-commerce site, my experiences have been both broad and impactful. Now, armed with a solid foundation and a passion for innovation, I eagerly look forward to contributing my skills to new challenges in the dynamic field of software development.
               </p>
             </section>
 
-            <section class="skills-section">
+            <section class="skills-section" id="skills-section">
               <h1 class="section-heading">Skills</h1>
               <!-- Skill Container with UL -->
               <ul class="skill-container">
@@ -190,9 +290,33 @@
   
             </section>
 
-            <section class="experience-section">
+            <section class="experience-section" id="experience-section">
               <h1 class="section-heading">Experience</h1>
 
+              <!-- Experience 2 -->
+              <div class="row experience-container">
+                <div class="col-sm-3">
+                  <p class="experience-timeline">Jul 2022 - Present</p>
+
+                </div>
+                <div class="col-sm-9">
+                  <h5 class="experience-heading">Software Engineer -  Johnnette Technologies Pvt. Ltd.</h5>
+                  <h6 class="experience-subheading">( Fulltime )</h6>
+
+                  <ul class="experience-description">
+                    <li>Spearheaded the development of a feature-rich, high-end software using PyQT, demonstrating proficiency in GUI development.</li>
+                    <li>Applied computer vision expertise with OpenCV, specializing in object tracking and detection for cutting-edge functionalities.</li>
+                    <li>Leveraged Google Maps and open-source map APIs such as Leaflet to integrate mapping solutions seamlessly.</li>
+                    <li>Enhanced and optimized software performance, ensuring a streamlined and efficient user experience.</li>
+                    <li>Possess a deep understanding of software paradigms, consistently striving to deliver robust and innovative applications.</li>
+                    <li>Led the development of a primary application on the Linux platform, showcasing versatility in diverse environments.</li>
+                    <li>Successfully deployed end products for both Windows and Linux systems, underscoring adaptability and cross-platform competency.</li>
+                    <li>Evolved into a full-stack engineer, diversifying skills and contributing to all aspects of software development.</li>
+                  </ul>
+                  
+
+                </div>
+              </div>
               <!-- Experience 1 -->
               <div class="row experience-container">
                 <div class="col-sm-3">
@@ -202,13 +326,20 @@
                 <div class="col-sm-9">
                   <h5 class="experience-heading">Python Intern -  Johnnette Technologies Pvt. Ltd.</h5>
                   <h6 class="experience-subheading">( Internship )</h6>
+
+                  <ul class="experience-description">
+                    <li>Engaged in comprehensive learning and development as a Python Intern.</li>
+                    <li>Successfully developed PyQT-based applications, showcasing proficiency in Python GUI development.</li>
+                    <li>Explored the intricacies of drone technology, gaining hands-on experience in relevant frameworks.</li>
+                    <li>Committed to continuous learning, reinforcing skills in Python development throughout the internship.</li>
+                  </ul>
                   
 
                 </div>
               </div>
             </section>
             
-            <section class="projects-section">
+            <section class="projects-section" id="projects-section">
               <h1 class="section-heading">Projects</h1>
 
               <!-- Project 1 -->
