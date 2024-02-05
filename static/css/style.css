@@ -1,0 +1,230 @@
+html,body{
+    height: 100vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 69%, rgba(5,35,3,1) 100%);
+  }
+
+  .main-profile{
+    /* border-right: 1px solid #597751 ; */
+    text-align: center;
+    height: 100vh;
+  }
+
+  .profile-description{
+    font-size: small;
+    color: #94a590;
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    
+  }
+
+  .content-area{
+    padding-left: 10px;
+  }
+
+
+
+  /* Scrollable Area  */
+
+
+      /* Set the height of the second column to 100% and make it scrollable */
+  .scrollable-content {
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 100%;
+    overflow-y: auto;
+    scrollbar-width: none;
+  }
+
+
+
+
+  .section-heading{
+    color: green;
+    text-align: left;
+  }
+
+  .section-ul{
+    max-width: 300px;
+    display: flex;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  
+  .section-li{
+    color: white;
+    margin: 0 auto;
+    list-style: none;
+    
+  }
+  
+  .section-link{
+    text-decoration: none;
+    color: green;
+    /* background-color: green; */
+    font-size: smaller;
+    padding: 2px 5px;
+    border-radius: 10px;
+
+
+  }
+  .section-link:hover{
+    text-decoration: underline;
+    color: white;
+    /* background-color: green; */
+    font-size: smaller;
+    padding: 2px 5px;
+    border-radius: 10px;
+
+
+  }
+
+  .social-media{
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .download-resume{
+    color: #597751;
+    font-size: smaller;
+    text-decoration: none;
+
+  }
+  .download-resume:hover{
+    color: green;
+    font-size: smaller;
+    text-decoration:underline;
+
+  }
+
+  .skill-container {
+    display: flex;
+    padding: 0;
+    gap: 10px;
+    /* justify-content: center; */
+    
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+  }
+
+  .skill {
+    padding: 5px 12px;
+    background-color: darkgreen; /* Skill background color */
+    border-radius: 20px;
+    list-style: none; /* Remove default list styles */
+  }
+  
+  .skill:hover {
+    padding: 5px 12px;
+    background-color: white;
+    color: rgb(0, 63, 0); /* Skill background color */
+    border-radius: 20px;
+    list-style: none; /* Remove default list styles */
+  }
+  
+  
+  .experience-container{
+    padding: 15px;
+    margin: 10px;
+    border-left: 2px solid #071a01 ;
+    /* background-color: #071a01; */
+    /* border-radius: 10px;
+    border: 1px solid #597751; */
+    
+  }
+  
+  .experience-container:hover{
+    padding: 15px;
+    margin: 10px;
+    color: green;
+    /* background-color: white; */
+    /* background-color: #071a01; */
+    /* border-radius: 10px; */
+    /* border: 1px solid #597751; */
+
+  } 
+  .experience-timeline{
+    font-size: smaller;
+    font-style: italic;
+    color: #94a590;
+  }
+  .experience-subheading{
+    font-size: smaller;
+    color: #94a590;
+  }
+
+  .experience-description{
+    color: #94a590;
+    font-size: smaller;
+  }
+
+  .project-container{
+    padding: 15px;
+    margin: 10px;
+    /* margin-bottom: 10px; */
+  }
+  
+  .project-container:hover{
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #597751;
+
+  }
+
+  .project-heading{
+    font-size: larger;
+
+  }
+
+  .project-description{
+    color: #94a590;
+    font-size: smaller;
+  }
+
+  .project-link{
+    color: #597751;
+    background-color: black;
+    text-decoration: none;
+    font-size: smaller;
+  }
+
+  .project-link:hover{
+    color: darkgreen;
+    background-color: black;
+    text-decoration: none;
+    font-size: smaller;
+  }
+
+
+
+  @media only screen and (max-width: 600px) {
+    .body,html{
+        height: 100%;
+    }
+
+    .main-profile{
+        height: auto;
+    }
+    .scrollable-content {
+      overflow-y: hidden;
+      padding: 0%;
+      height: auto;
+      /* scrollbar-width: thin; */
+    }
+
+    .project-container{
+        padding: px;
+        margin: 2px;
+        /* margin-bottom: 10px; */
+        }
+      
+    .project-container:hover{
+        padding: px;
+        margin: 2px;
+        border-radius: 10px;
+        border: 1px solid #597751;
+
+    }
+
+}
