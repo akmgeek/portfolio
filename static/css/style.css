@@ -1,17 +1,24 @@
 html,body{
     height: 100vh;
+    font-family: 'Jost', sans-serif;
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 69%, rgba(5,35,3,1) 100%);
   }
 
   .main-profile{
     /* border-right: 1px solid #597751 ; */
-    text-align: center;
-    height: 100vh;
+    justify-content: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .row-container{
+    height: 100%;
   }
 
   .profile-description{
-    font-size: small;
+    /* font-size: small; */
     color: #94a590;
     max-width: 400px;
     text-align: center;
@@ -172,6 +179,16 @@ html,body{
 
   }
 
+  .project-img-container{
+    text-align: right;
+  }
+
+  .project-img{
+
+    max-height: 100%;
+    max-width: 150px;
+  }
+
   .project-heading{
     font-size: larger;
 
@@ -200,7 +217,13 @@ html,body{
 
   @media only screen and (max-width: 600px) {
     .body,html{
-        height: 100%;
+        height: auto;
+        background: black;
+        background:linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%);
+    }
+
+    .row-container{
+      height: auto;
     }
 
     .main-profile{
@@ -225,6 +248,10 @@ html,body{
         border-radius: 10px;
         border: 1px solid #597751;
 
+    }
+
+    .project-img-container{
+      text-align: center;
     }
 
 }

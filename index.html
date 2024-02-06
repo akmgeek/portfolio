@@ -6,66 +6,67 @@
   <title>Portfolio (akmgeek)</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.17.0/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="static/css/style.css">
 
-  <style>
 
-  </style>
 </head>
 <body>
   <!-- Main container -->
 
     <div class="container-fluid h-100 p-5">
 
-      <div class="row h-100 p-2">
+      <div class="row p-2 row-container">
 
         <!-- Main Profile -->
 
         <!-- d-flex flex-column align-items-center justify-content-center text-center -->
-        <div class="col-sm-5 text-light main-profile">
-            <!-- Profile Picture in Circular Frame -->
-            <!-- <div class="rounded-circle overflow-hidden mb-3 " style="width: 150px; height: 150px; border: 1px solid #fff; text-align: right;">
-              <img src="profilepic.jpg" alt="Profile Picture" class="w-100 h-100 object-fit-cover" style="text-align: right;">
-            </div> -->
-            <img src="profilepic.jpg" alt="Profile Picture" class=" object-fit-cover" style="width: 150px; height: 150px; text-align: right; object-fit: cover; border-radius: 100%;">
-
-            <!-- Name -->
-            <h3 class="mb-2">Amit Kumar Maurya</h3>
-
-            <!-- Designation -->
-            <p class="text-success mb-2">Software Engineer</p>
-
-            <!-- Description -->
-            <p class="profile-description">Python enthusiast, dedicated to crafting solutions that matter. Let's collaborate on your next endeavor.</p>
-
-            <!-- Section Links -->
-            <ul class="section-ul">
-              <li class="section-li"><a class="section-link" href="#about-section">About</a></li>
-              <li class="section-li"><a class="section-link" href="#skills-section">Skills</a></li>
-              <li class="section-li"><a class="section-link" href="#experience-section">Experience</a></li>
-              <li class="section-li"><a class="section-link" href="#projects-section">Projects</a></li>
-            </ul>
-
-            <!-- GitHub Icon -->
-            <div class="social-media">
-              <a href="https://github.com/akmgeek" target="_blank" class="text-dark">
-                <img src="github-svg-icon.svg" alt="" style="height: 20px; width: 20px;">
-              </a>
-              <a href="https://instagram.com/akmgeek" target="_blank" class="text-dark">
-                <img src="instagram-svg-icon.svg" alt="" style="height: 20px; width: 20px;">
-              </a>
-              <a href="https://youtube.com/akmgeek" target="_blank" class="text-dark">
-                <img src="youtube-svg-icon.svg" alt="" style="height: 20px; width: 20px;">
-              </a>
-              <a href="https://linked.com/akmgeek" target="_blank" class="text-dark">
-                <img src="linkedin-svg-icon.svg" alt="" style="height: 20px; width: 20px;">
-              </a>
-            </div>
-
-            <div>
-              <!-- Resume download link -->
-              <a class="download-resume" href="#">Download Resume >></a>
-
+        <div class="col-sm-5 h-100 text-light main-profile">
+          
+          <div style="text-align: center;">
+              <!-- Profile Picture in Circular Frame -->
+              <img src="profilepic.jpg" alt="Profile Picture" class=" object-fit-cover" style="width: 150px; height: 150px; text-align: right; object-fit: cover; border-radius: 100%;">
+  
+              <!-- Name -->
+              <h3 class="mb-2">Amit Kumar Maurya</h3>
+  
+              <!-- Designation -->
+              <p style="color: #94a590;">Software Engineer</p>
+  
+              <!-- Description -->
+              <p class="profile-description">Python enthusiast, dedicated to crafting solutions that matter. Let's collaborate on your next endeavor.</p>
+  
+              <!-- Section Links -->
+              <ul class="section-ul">
+                <li class="section-li"><a class="section-link" href="#about-section">About</a></li>
+                <li class="section-li"><a class="section-link" href="#skills-section">Skills</a></li>
+                <li class="section-li"><a class="section-link" href="#experience-section">Experience</a></li>
+                <li class="section-li"><a class="section-link" href="#projects-section">Projects</a></li>
+              </ul>
+  
+              <!-- GitHub Icon -->
+              <div class="social-media">
+                <a href="https://github.com/akmgeek" target="_blank" class="text-dark">
+                  <img src="github-svg-icon.svg" alt="" style="height: 20px; width: 20px;">
+                </a>
+                <a href="https://instagram.com/akmgeek" target="_blank" class="text-dark">
+                  <img src="instagram-svg-icon.svg" alt="" style="height: 20px; width: 20px;">
+                </a>
+                <a href="https://youtube.com/akmgeek" target="_blank" class="text-dark">
+                  <img src="youtube-svg-icon.svg" alt="" style="height: 20px; width: 20px;">
+                </a>
+                <a href="https://linked.com/akmgeek" target="_blank" class="text-dark">
+                  <img src="linkedin-svg-icon.svg" alt="" style="height: 20px; width: 20px;">
+                </a>
+              </div>
+  
+              <div>
+                <!-- Resume download link -->
+                <a class="download-resume" href="#">Download Resume >></a>
+  
+              </div>
             </div>
 
         </div>
@@ -153,39 +154,63 @@
 
               <!-- Project 1 -->
               <div class="row project-container">
-                  <div class="col-sm-3">
-                    <img class="img-fluid" src="project-dcontroller.png" alt="">
+                  <div class="col-sm-3 project-img-container">
+                    <img class="img-fluid project-img" src="project-dcontroller.png" alt="">
                   </div>
 
                   <div class="col-sm-9">
                     <h1 class="project-heading">D-Controller</h1>
-                    <p class="project-description">D-Controller: Streamlined drone control. Python-powered, with PyQT, OpenCV, DroneKit, and Mavlink support. Effortless communication and enhanced precision for Mavlink-compatible drones. Elevate your drone experience with simplicity and efficiency.</p>
+                    <p class="project-description">D-Controller: Streamlined basic drone control. Python-powered, with PyQT, OpenCV, DroneKit, and Mavlink support. Effortless communication for Mavlink-compatible drones. Elevate your drone experience with simplicity and efficiency.</p>
+                    <ul class="skill-container">
+                      <li class="skill">python</li>
+                      <li class="skill">PyQt5</li>
+                      <li class="skill">html</li>
+                      <li class="skill">css</li>
+                      <li class="skill">javascript</li>
+                      <li class="skill">openCV</li>
+                      <li class="skill">mavlink</li>
+                      <!-- Add more skills as needed -->
+                    </ul>
                     <a class="project-link" href="https://github.com/akmgeek/D-Controller/">Project Link >></a>
                   </div>
               </div>
 
               <!-- Project 2 -->
               <div class="row project-container">
-                  <div class="col-sm-3">
-                    <img class="img-fluid" src="project-plantto.png" alt="">
+                  <div class="col-sm-3 project-img-container">
+                    <img class="img-fluid project-img" src="project-plantto.png" alt="">
                   </div>
 
                   <div class="col-sm-9">
                     <h1 class="project-heading">Plantto</h1>
                     <p class="project-description">Explore Plantto, a dynamic Django-based ecommerce platform tailored for plant enthusiasts. Featuring seamless functionality like filters, categories, easy buying, order management, cart addition, and secure payments, it provides a user-friendly experience for shopping plant-based products.</p>
+                    <ul class="skill-container">
+                      <li class="skill">python</li>
+                      <li class="skill">django</li>
+                      <li class="skill">html</li>
+                      <li class="skill">css</li>
+                      <li class="skill">javascript</li>
+                      <li class="skill">bootstrap</li>
+                      <!-- Add more skills as needed -->
+                    </ul>
                     <a class="project-link" href="https://github.com/akmgeek/plantto/">Project Link >></a>
                   </div>
               </div>
 
               <!-- Project 3 -->
               <div class="row project-container">
-                  <div class="col-sm-3">
-                    <img class="img-fluid" src="project-4pdf.png" alt="">
+                  <div class="col-sm-3 project-img-container">
+                    <img class="img-fluid project-img" src="project-4pdf.png" alt="">
                   </div>
 
                   <div class="col-sm-9">
                     <h1 class="project-heading">4PDF</h1>
                     <p class="project-description">4PDF is a PyQT-powered PDF toolkit, offering essential features like merging, splitting, OCR text extraction, encryption, and editing. This user-friendly software ensures seamless document management with a sleek interface. Install with ease and stay up-to-date with regular updates for enhanced functionality.</p>
+                    <ul class="skill-container">
+                      <li class="skill">python</li>
+                      <li class="skill">PyQt5</li>
+                      <!-- Add more skills as needed -->
+                    </ul>
                     <a class="project-link" href="https://github.com/akmgeek/4PDF/">Project Link >></a>
                   </div>
               </div>
